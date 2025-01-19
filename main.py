@@ -1,12 +1,12 @@
 import sys
 import pygame
-
+import random
 from game import Game
 
 
 def main():
     pygame.init()
-    game = Game(num_points=4)
+    game = Game(num_points=random.randint(2, 15))
     game.run()
 
 
